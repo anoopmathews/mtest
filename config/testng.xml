@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite1" parallel="tests" thread-count="2">
+ <test name="testngTest">
+ <parameter name = "startCounter" value="25"/> 
+ <classes>
+ <class name="com.sample.maven.mvntest.tests" />
+ </classes>
+ </test>
+ </suite>

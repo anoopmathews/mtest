@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite1]" parallel="tests">
+  <test name="testngTest(failed)" parallel="tests">
+    <parameter name="startCounter" value="25"/>
+    <classes>
+      <class name="com.sample.maven.mvntest.tests">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="testTimer" invocation-numbers="0"/>
+          <include name="afterClass"/>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="AfterMethod"/>
+        </methods>
+      </class> <!-- com.sample.maven.mvntest.tests -->
+    </classes>
+  </test> <!-- testngTest(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
